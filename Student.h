@@ -13,8 +13,11 @@ public:
 	int getSex(){
 		return this->sex;
 	}
-	bool equal(Student* other){
-		return this->SID==other->SID;
+	bool equal(Student other){
+		return this->SID==other.SID;
+	}
+	int getGrade(){
+		return this->grade;
 	}
 	void input();
 	void inputgra();
